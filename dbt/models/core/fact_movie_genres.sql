@@ -10,7 +10,8 @@ with genres_split as (
     cross join unnest(genres) as genre
 )
 
-select title.primary_title,
+select title.movie_id,
+    title.primary_title,
     title.start_year,
     genres_split.genre
 from {{ ref('stg_title_basics') }} title
