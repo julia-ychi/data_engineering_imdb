@@ -10,6 +10,7 @@ select
     case when birthYear = '\\N' then null 
         else {{ dbt.safe_cast("birthYear", api.Column.translate_type("integer")) }} 
         end as birth_year,
+    case when knownForTitles = '\\N' then null else SPLIT(knownForTitles, ',') end as known_for_titles
 from {{ source('staging', 'name_basics') }}
 
 -- dbt build --select <model_name> --vars '{'is_test_run': 'false'}'
