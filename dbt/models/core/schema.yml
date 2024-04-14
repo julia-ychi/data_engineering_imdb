@@ -1,10 +1,12 @@
 version: 2
 
 models:
-  - name: fact_movie_ratings
+  - name: fact_movie_genres
     description: >
-      Facts about each movie, including title, release year, genre, average rating, and number of votes
-  - name: fact_people_ratings
+      Facts about each movie, including title, release year, genre
+  - name: top_people_ratings
     description: >
-      Facts about people and the movies they are known for.
-      Include people's names, the titles of movies they are known for, the release year of movies, movies' ratings and votes 
+      Returns the number of movies, average rating of movies, and the average number of votes a director/performer receives for each year
+  - name: top_movie_ratings
+    description: >
+      Returns top 20 movies for each year based on the average rating and number of votes
