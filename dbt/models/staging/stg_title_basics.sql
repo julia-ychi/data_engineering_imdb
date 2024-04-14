@@ -15,6 +15,7 @@ select
         end as runtime_minutes,
     case when genres = '\\N' then null else SPLIT(genres, ',') end as genres
 from {{ source('staging', 'title_basics') }}
+where titleType = 'movie'
 
 -- dbt build --select <model_name> --vars '{'is_test_run': 'false'}'
 {% if var('is_test_run', default=true) %}
