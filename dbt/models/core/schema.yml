@@ -6,7 +6,7 @@ models:
       Facts about each movie, including id, title, release year, genre
   - name: top_people_ratings
     description: >
-      Returns the number of movies, average rating of movies, and the average number of votes a director/performer receives for each year
+      Returns top 20 directors/actors for each year based on average rating of movies, and the total number of votes they receives for that year
   - name: top_movie_ratings
     description: >
       Returns top 20 movies for each year based on the average rating and number of votes
