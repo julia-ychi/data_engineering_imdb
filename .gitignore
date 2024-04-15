@@ -152,6 +152,7 @@ docker-compose.override.yml
 
 # DB files
 *.db
+*.tsv
 
 # Terraform files
 **/.terraform*

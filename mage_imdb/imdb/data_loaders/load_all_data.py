@@ -28,7 +28,6 @@ def load_data_from_api(*args, **kwargs):
     datasets_files = [
     ("ashirwadsangwan/imdb-dataset", "name.basics.tsv"),
     ("ashirwadsangwan/imdb-dataset", "title.basics.tsv"),
-    ("ashirwadsangwan/imdb-dataset", "title.principals.tsv"),
     ("ashirwadsangwan/imdb-dataset", "title.ratings.tsv")
 ]
     # kaggle datasets download -d ashirwadsangwan/imdb-dataset

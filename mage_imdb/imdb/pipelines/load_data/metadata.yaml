@@ -1,5 +1,5 @@
 blocks:
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -16,7 +16,7 @@ blocks:
   upstream_blocks:
   - load_all_data
   uuid: read_name_basics
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks: []
@@ -32,7 +32,7 @@ blocks:
   upstream_blocks:
   - read_name_basics
   uuid: name_basics_export
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -49,7 +49,7 @@ blocks:
   upstream_blocks:
   - load_all_data
   uuid: read_title_basics
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks: []
@@ -73,7 +73,6 @@ blocks:
   downstream_blocks:
   - read_name_basics
   - read_title_basics
-  - read_title_principals
   - read_title_ratings
   executor_config: null
   executor_type: local_python
@@ -81,29 +80,12 @@ blocks:
   language: python
   name: load_all_data
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks: []
   uuid: load_all_data
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - title_principals_export
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: read_title_principals
-  retry_config: null
-  status: updated
-  timeout: null
-  type: data_loader
-  upstream_blocks:
-  - load_all_data
-  uuid: read_title_principals
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -121,22 +103,6 @@ blocks:
   - load_all_data
   uuid: read_title_ratings
 - all_upstream_blocks_executed: false
-  color: null
-  configuration: {}
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: title_principals_export
-  retry_config: null
-  status: updated
-  timeout: null
-  type: data_exporter
-  upstream_blocks:
-  - read_title_principals
-  uuid: title_principals_export
-- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks: []

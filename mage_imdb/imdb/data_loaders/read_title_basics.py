@@ -18,7 +18,7 @@ def load_data(*args, **kwargs):
     """
     # Specify your data loading logic here
     filename = '/home/src/title.basics.tsv'
-    selected_cols = ['tconst', 'primaryTitle', 'startYear', 'runtimeMinutes', 'genres']
+    selected_cols = ['tconst', 'titleType', 'primaryTitle', 'startYear', 'runtimeMinutes', 'genres']
     chunksize = 10 ** 6
     list_df = []
     with pd.read_csv(filename, chunksize=chunksize, sep='\t', low_memory=False) as reader:
