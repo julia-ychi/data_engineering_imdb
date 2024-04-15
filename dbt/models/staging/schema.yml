@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: big-cargo-412019
+    schema: imdb
+    tables:
+      - name: name_basics
+      - name: title_basics
+      - name: title_ratings
