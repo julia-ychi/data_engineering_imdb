@@ -19,11 +19,11 @@ def load_data(*args, **kwargs):
     filename = '/home/src/name.basics.tsv'
     # selected_cols = ['tconst', 'primaryTitle', 'startYear', 'runtimeMinutes', 'genres']
     chunksize = 10 ** 6
-    selected_cols = ['nconst', 'primaryName', 'birthYear', 'knownForTitles']
+    # selected_cols = ['nconst', 'primaryName', 'birthYear', 'knownForTitles']
     list_df = []
     with pd.read_csv(filename, chunksize=chunksize, sep='\t', low_memory=False) as reader:
         for chunk in reader:
-            list_df.append(chunk[selected_cols])
+            list_df.append(chunk)
     return pd.concat(list_df)
 
 
