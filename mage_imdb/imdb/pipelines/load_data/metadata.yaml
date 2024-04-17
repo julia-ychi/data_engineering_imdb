@@ -26,7 +26,7 @@ blocks:
   language: python
   name: name_basics_export
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -59,7 +59,7 @@ blocks:
   language: python
   name: title_basics_export
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_exporter
   upstream_blocks:
