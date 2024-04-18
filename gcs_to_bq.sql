@@ -1,28 +1,28 @@
-CREATE OR REPLACE EXTERNAL TABLE `big-cargo-412019.imdb.name_basics_external`
+CREATE OR REPLACE EXTERNAL TABLE `<project-id>.<bq-dataset-name>.name_basics_external`
 OPTIONS (
   format = 'PARQUET',
-  uris = ['gs://imdb_bucket_de_zoomcamp/name.basics.parquet']
+  uris = ['gs://<gcs-bucket-name>/name.basics.parquet']
 );
 
-CREATE OR REPLACE EXTERNAL TABLE `big-cargo-412019.imdb.title_basics_external`
+CREATE OR REPLACE EXTERNAL TABLE `<project-id>.<bq-dataset-name>.title_basics_external`
 OPTIONS (
   format = 'PARQUET',
-  uris = ['gs://imdb_bucket_de_zoomcamp/title.basics.parquet']
+  uris = ['gs://<gcs-bucket-name>/title.basics.parquet']
 );
 
-CREATE OR REPLACE EXTERNAL TABLE `big-cargo-412019.imdb.title_ratings_external`
+CREATE OR REPLACE EXTERNAL TABLE `<project-id>.<bq-dataset-name>.title_ratings_external`
 OPTIONS (
   format = 'PARQUET',
-  uris = ['gs://imdb_bucket_de_zoomcamp/title.ratings.parquet']
+  uris = ['gs://<gcs-bucket-name>/title.ratings.parquet']
 );
 
-CREATE OR REPLACE TABLE `big-cargo-412019.imdb.name_basics`
+CREATE OR REPLACE TABLE `<project-id>.<bq-dataset-name>.name_basics`
 CLUSTER BY birthYear
-AS SELECT * FROM `big-cargo-412019.imdb.name_basics_external`;
+AS SELECT * FROM `<project-id>.<bq-dataset-name>.name_basics_external`;
 
-CREATE OR REPLACE TABLE `big-cargo-412019.imdb.title_basics`
+CREATE OR REPLACE TABLE `<project-id>.<bq-dataset-name>.title_basics`
 CLUSTER BY startYear
-AS SELECT * FROM `big-cargo-412019.imdb.title_basics_external`;
+AS SELECT * FROM `<project-id>.<bq-dataset-name>.title_basics_external`;
 
-CREATE OR REPLACE TABLE `big-cargo-412019.imdb.title_ratings`
-AS SELECT * FROM `big-cargo-412019.imdb.title_ratings_external`;
+CREATE OR REPLACE TABLE `<project-id>.<bq-dataset-name>.title_ratings`
+AS SELECT * FROM `<project-id>.<bq-dataset-name>.title_ratings_external`;
