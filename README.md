@@ -66,7 +66,7 @@ Data transformations are done in DBT to prepare the data for visualizations. The
 
 ## Data Visualization: Dashboards
 
-[Looker Studio Dashboard](https://lookerstudio.google.com/reporting/18545f81-afde-4f8d-95cd-d30e2d7e46cc)
+[Looker Studio Dashboard](https://lookerstudio.google.com/reporting/18545f81-afde-4f8d-95cd-d30e2d7e46cc) (This might expire on Apr. 22, 2024, but you can refer to the screenshot below)
 
 ![dashboard](images/IMDB_Report.png)
 
