@@ -1,38 +1,31 @@
-variable "credentials" {
-  description = "My Credentials"
-  default     = "./key/my-creds.json"
-  #ex: if you have a directory where this file is called keys with your service account json file
-  #saved there as my-creds.json you could use default = "./key/my-creds.json"
-}
-
 
 variable "project" {
-  description = "Project"
-  default     = "big-cargo-412019"
+  description = "Project ID"
+  default     = "<CHANGE VALUE HERE>"  #"big-cargo-412019"
 }
 
 variable "region" {
   description = "Region"
   #Update the below to your desired region
-  default     = "us-east5-a"
+  default     = "<CHANGE VALUE HERE>"  #"us-east5-a"
 }
 
 variable "location" {
   description = "Project Location"
   #Update the below to your desired location
-  default     = "US"
+  default     = "<CHANGE VALUE HERE>"  #"US"
 }
 
 variable "bq_dataset_name" {
   description = "My BigQuery Dataset Name"
   #Update the below to what you want your dataset to be called
-  default     = "imdb_new_yuyuan"
+  default     = "<CHANGE VALUE HERE>"  #"imdb_dataset"
 }
 
 variable "gcs_bucket_name" {
   description = "My Storage Bucket Name"
   #Update the below to a unique bucket name
-  default     = "imdb-bucket-new-yuyuan"
+  default     = "<CHANGE VALUE HERE>"  #"imdb-bucket-412019"
 }
 
 variable "gcs_storage_class" {
