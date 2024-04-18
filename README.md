@@ -1,5 +1,3 @@
-![dataset-cover.png](https://github.com/wjuszczyk/dezoomcamp-project/blob/master/images/dataset-cover.png)
-
 # Data Engineering Project - IMDb movies analysis
 
 - [Data Engineering Project - IMDb movies analysis](#data-engineering-project---imdb-movies-analysis)
