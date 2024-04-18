@@ -159,6 +159,7 @@ Download the credential file `kaggle.json` and keep it somewhere.
   docker-compose up
   ```
 6. On the main page of Mage, navigate to Triggers section and create a new trigger by clicking on `+ New trigger`. Configure the trigger to make it run weekly on Monday. After activating the trigger, click `Run@once` to run the pipeline so that the data can be loaded. This may take 5-10 minutes.
+
 ![mage-trigger](./images/mage-trigger.png)
 ![mage-trigger-set](./images/mage-trigger-set.png)
 ![mage-run](./images/mage-run.png)
@@ -194,7 +195,7 @@ Once you have logged into dbt cloud you will be prompt to create a new project.
   ```
   The views and tables should be generated into a BigQuery dataset with name starting with `dbt_`.
 
-10. You can deplot the project by creating an environment and a job so that it will run automatically to keep data updated.
+10. You can deploy the project by creating an environment and a job so that it will run automatically to keep data updated.
 
 ### Step 7: Visualization
 
